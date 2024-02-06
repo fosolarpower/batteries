@@ -1,0 +1,233 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PART 1 */
+/* HEADER & NAV BAR & LOGO & MENU & DROPDOWN MENU */
+.navbar {
+    /* background-color: black; */
+    margin: 1em;
+    padding: 1em;
+    
+  
+    /* alignment */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+  
+    /* appearance */
+    
+    
+  
+  }
+  
+  #menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    
+    
+  }
+  .cart_btn {
+      background-color: rgb(255, 230, 0);
+      border-radius: 5px;
+      border: none;
+      height: 50px;
+      width: 150px;
+  
+      /* behavior */
+      transition: 2 ease;
+  
+  
+  }
+  #cart {
+      color: white;
+  }
+  
+  .cart_btn:active{
+      scale: 0.25;
+  }
+  
+  .toggle_btn {
+      cursor: pointer;
+      color: white;
+      display: none;
+      /* display is NONE because we need to hide it */
+  }
+  .toggle_btn:hover {
+      color: rgb(255, 230, 0);
+  }
+  a {
+      text-decoration: none;
+      color: rgb(51, 4, 4);
+      }
+  a:hover {
+          color: black;
+          font-size: larger;
+          
+         
+   }
+      
+  
+  /* DROPDOWN MENU */
+  .dropdown_menu{
+      top: 60px;
+      background: rgba(75, 75, 75, 0.1) ;
+      backdrop-filter: blu(1.5);
+      overflow: hidden;
+      border-radius: 10px;
+      display: none;
+          /* display is NONE because we need to hide it */
+      /* height: 0; */
+          /* height is 0 because we don't need any height */
+      transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  }
+  .dropdown_menu ul {
+      padding: 2px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+  
+  }
+  .dropdown_menu .cart_btn{
+      width: 100%;
+      border-radius: 20px;
+  }
+  
+  
+  
+  /* RESPONSIVE MENU */
+  @media (max-width: 1019px){
+      .navbar #menu,
+      .navbar .cart_btn {
+          display: none;
+      }
+      .navbar .toggle_btn {
+          display: block;
+      }
+      .dropdown_menu{
+          display: block;
+      }
+  }
+  
+
+body {
+    background-color: aliceblue;
+}
+
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#batteryOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    /* border:solid; */
+    height:600px;
+    width:300px;
+    /* background-color: antiquewhite; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: black 1px 1px 10px;
+    
+
+}
+#batteryOneImage {
+    color:black;
+    /* border:solid; */
+    height:300px;
+    width:300px;
+}
+#batteryOneDescription{
+    text-align: center;
+    font-size: 12px;
+}
+#batteryOnePurchase {
+    /* border:solid;  */
+    height:100px; 
+    width:230px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#batteryOnePurchaseCounter{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+    
+}
+#batteryOnePurchaseCountItem {
+    border:solid; 
+    height:20px; 
+    width:20px;
+}
+#batteryOnePlus{
+    align-items: left;
+}
+#batteryOnePurchaseAdd{
+    text-align: center;
+}
+#batteryOnePurchaseCountItem{
+    border-radius: 3px;
+    border-color: antiquewhite;
+
+}
+#batteryOneMinus {
+    box-shadow: black 1px 1px 15px;
+} 
+#batteryOneProductsInStore{
+    font-size: 10px;
+
+}
+#batteryOneAddToCartButton{
+    border: none;
+    background-color: orange;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: burlywood 1px 1px 10px;
+
+}
+
+
+/* FOOTER */
+.footer {
+    /* create */
+    color:black;
+    background-color:  rgb(255, 230, 0);
+    padding: 1em;
+    /* margin: 1em; */
+    /* border: solid yellow; */
+    opacity: 95%;
+    /* arrangement */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    justify-content: space-around;
+    }
+
+.copyright {
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding: 1em;
+}
